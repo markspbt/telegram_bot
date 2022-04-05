@@ -123,7 +123,7 @@ exit(0);
 sub sendreply {
 my($chatid,$messageid,$nameid,$name,$posted,$message)=@_;	our %origchat=();	my $reply='';
 if(-f "$domain_root/chats/$nameid.txt") {eval {require "$domain_root/chats/$nameid.txt"};} ## END CHAT WITH PERSON PRESENT
-if($nameid eq your_userid_for_testing) {## Comment this "if" before deploing, uncomment for testing
+if($nameid eq $your_userid_for_testing) {## Comment this "if" before deploing, uncomment for testing
 #	my $tekst = "\"$message\"\nReply";
 #	$tekst =~ s/([\W])/"%" . uc(sprintf("%2.2x",ord($1)))/eg;
 #	`curl 'https://api.telegram.org/bot$tagis/sendMessage?chat_id=$chatid\&text=$tekst'`;
