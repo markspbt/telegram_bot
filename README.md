@@ -1,4 +1,4 @@
-# telegram_bot
+# Telegram Bot
 Simple Telegram Bot
 
 ## Prerequisites
